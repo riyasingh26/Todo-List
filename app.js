@@ -19,11 +19,11 @@ class item{
         itemBox.classList.add('item');
         
         let editButton = document.createElement('button');
-        editButton.classList.add('editButton');
+        editButton.classList.add('editbutton');
         editButton.innerHTML = "EDIT";
 
         let removeButton = document.createElement('button');
-        removeButton.classList.add('removeButton');
+        removeButton.classList.add('removebutton');
         removeButton.innerHTML = "REMOVE";
 
         container.appendChild(itemBox);
@@ -39,8 +39,8 @@ class item{
         input.disabled = !input.disabled;
     }
 
-    remove(itemBox){
-        container.removeChild(item);
+    remove(item){
+        item.remove();
     }
 
 }
